@@ -1,6 +1,6 @@
 ### https://github.com/theasp/docker-novnc
 FROM theasp/novnc
-RUN apt-get update && \
+RUN apt-get --allow-releaseinfo-change update && \
     apt-get install -y dosbox && \
     rm -rfv /var/lib/apt/lists/*
 
